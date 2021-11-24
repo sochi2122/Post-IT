@@ -4,25 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book List</title>
+    <title>Item List</title>
 </head>
 <body>
-    <h1>My Reading List</h1>
+    <h1>My store List</h1>
     <ul style="list-style: none;">
-        <% books.forEach(b => { %>
+        <% items.forEach(b => { %>
             <li style="margin-bottom: 1rem;">
-                <form style="display: inline; margin-right: 1rem;" action="/books/<%= b._id %>?_method=DELETE" method="POST">
+                <form style="display: inline; margin-right: 1rem;" action="/items/<%= b._id %>?_method=DELETE" method="POST">
                     <input type="submit" value="DELETE">
                 </form>
-                <a style="margin: 0 1rem 0 0;" href="/books/<%= b._id %>/edit">EDIT</a>
-                <a href="/books/<%= b._id %>">
-                    <%= b.title %>
+                <a style="margin: 0 1rem 0 0;" href="/items/<%= b._id %>/edit">EDIT</a>
+                <a href="/items/<%= b._id %>">
+                    <%= b.name %>
                 </a>
                 - 
                 <p style="display: inline; margin-left: .5rem;">There are currently <%= b.qty %> of these available</p>
             </li>
         <% }) %>
     </ul>
-    <a href="/books/new">Add a New Book</a>
+    <a href="/items/new">Add a New Item</a>
 </body>
 </html>

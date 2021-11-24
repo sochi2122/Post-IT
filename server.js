@@ -2,10 +2,10 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
-const booksController = require('./controllers/books');
+const booksController = require('./controllers/items');
 // initialize app
 const app = express();
-const Book = require('./models/book')
+const Book = require('./models/items')
 //const books = require('./controllers/books');
 // configure settings
 require('dotenv').config();
@@ -26,58 +26,58 @@ app.use(express.urlencoded({ extended: false })); // creates req.body
 app.use(methodOverride('_method'));
 
 // mount routes
-app.use('/books', booksController);
+app.use('/items', itemsController);
 
 //create
 
 
 // Create route
-app.post('/books', (req, res) => {
-  Book.create(req.body, (err, createdBook) => {
-      res.send(createdBook);
+app.post('/items', (req, res) => {
+  Item.create(req.body, (err, createdItem) => {
+      res.send(createdItem);
   }); // this code runs asynchronous
 });
 
 app.get('/', (req, res) => {
-
-res.send(		`Welcome to the books app! Go to <a href="/books">localhost:3000/books</a> to get started!`
+res.send(`Welcome to the Thrift Shop app! Go to <a href="/books">localhost:3000/items</a> to get started!`
 )
-
 })
 
 
-app.get('/books', (req, res) => {
-  Book.find({}, (err, arrayOfBooks) => {
-      res.send(arrayOfBooks);
+app.get('/items', (req, res) => {
+  Book.find({}, (err, arrayOfItems) => {
+      res.send(arrayOfItems)
+      
   });
+  res.render('index.ejs')
 });
 
 
 // Show route
 
-app.get('/books/:id', (req, res) => {
-  Book.findById(req.params.id, (err, foundBook) => {
-      res.send('index.ejs', foundBook)
+app.get('/items/:id', (req, res) => {
+  Item.findById(req.params.id, (err, foundItem) => {
+      res.send('index.ejs', foundItem)
   });
 });
 
 
 // Delete route
-app.delete('/books/:id', (req, res) => {
-  Book.findByIdAndDelete(req.params.id, (err, copyOfDeletedBook) => {
-      res.send(copyOfDeletedBook);
+app.delete('/items/:id', (req, res) => {
+  Item.findByIdAndDelete(req.params.id, (err, copyOfDeletedItem) => {
+      res.send(copyOfDeletedItem);
   });
 });
 
 // Update route
 
-app.put('/books/:id', (req, res) => {
+app.put('/items/:id', (req, res) => {
   Book.findByIdAndUpdate(
       req.params.id, 
       req.body, 
       { new: true }, 
-      (err, updatedBook) => {
-          res.send(updatedBook);
+      (err, updatedItem) => {
+          res.send(updatedItem);
   });
 });
 

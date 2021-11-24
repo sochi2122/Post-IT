@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Book Page</title>
+    <title>Edit Item Page</title>
 </head>
 <body>
-    <h1>Edit Book Page</h1>
-    <form action="/books/<%= book._id %>?_method=PUT" method="POST"><br>
-        Title: <input type="text" name="title" value="<%= book.title %>"><br>
-        Author: <input type="text" name="author" value="<%= book.author %>"><br>
-        Completed: <input type="checkbox" name="completed" <%= book.completed ? 'checked' : '' %>><br>
-        <input type="submit" value="Add Book">  
+    <h1>Edit Item Page</h1>
+    <form action="/items/<%= item._id %>?_method=PUT" method="POST"><br>
+        Name: <input type="text" name="title" value="<%= item.name %>"><br>
+        Brand: <input type="text" name="author" value="<%= item.brand %>"><br>
+        Description: <input type="text" name="Description" value="<%= item.description %>"><br>
+        Sold: <input type="checkbox" name="Sold" <%= item.sold ? 'checked' : '' %>><br>
+        <input type="submit" value="Add Item">  
     </form>
 </body>
 </html>
