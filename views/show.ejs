@@ -10,12 +10,12 @@
     <h1>Details for <%= item.name %></h1>
     <p>Made By: <%= item.brand %></p>
     <p>Description: <%= item.description %></p>
+    <a img src= <%= item.image %></a>
     <p>There are currently <%= item.qty %> of these in stock</p>
-    <% if(item.sold) { %>
-        <p>You have sold this item</p>
-    <% } else { %>
-        <p>You have not sold this item</p>
-    <% } %> 
+    <p><%= item.sold %></p>
+    
+    
+    
     <a href="/items">Go back to item</a>
         <form action="/items/<%= item._id%>/buy" method="POST">
             <input <%= item.qty ? '' : 'disabled' %> type="submit" value="<%= item.qty ? 'Buy': 'Out of Stock' %>">

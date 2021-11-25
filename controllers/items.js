@@ -3,7 +3,10 @@ const express = require('express');
 // create a router object
 const itemsRouter = express.Router();
 
-const Item = require('../models/item');
+
+ const Item = require('../models/item');
+
+
 // list our router actions
 
 // Seed route

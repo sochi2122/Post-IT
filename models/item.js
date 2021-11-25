@@ -8,6 +8,7 @@ const itemSchema = new Schema({
     brand: { type: String, required: true },
     description: { type: String, required: true},
     sold: Boolean,
+    image: { type:String, required: true},
     qty: { type: Number, default: 1}
 }, { timestamps: true });
 
