@@ -9,6 +9,10 @@ const itemSchema = new Schema({
     description: { type: String, required: true},
     sold: Boolean,
     image: { type:String, required: true},
+    price: { type: Number, required: true },
+    Email: { type: String, required: true },
+    phone: { type: String, required: true },
+    contact: { type: String, required: true },
     qty: { type: Number, default: 1}
 }, { timestamps: true });
 

@@ -97,7 +97,7 @@ itemsRouter.post('/', (req, res) => {
     } else {
         req.body.sold = false;
     }
-    Sold.create(req.body, (err, item) => {
+    Item.create(req.body, (err, item) => {
         res.redirect('/items');
     });
 });
