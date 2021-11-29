@@ -94,7 +94,7 @@ itemsRouter.put('/:id', (req, res) => {
 itemsRouter.post('/', (req, res) => {
     // req.body.id = item.length + 1;
     // item.push(req.body);
-
+console.log(req.body)
     if(req.body.sold === 'on') {
         req.body.sold = true;
     } else {

@@ -10,11 +10,14 @@ const itemSchema = new Schema({
     sold: Boolean,
     image: { type:String, required: false},
     price: { type: Number, required: false },
-    Email: { type: String, required: false },
+    email: { type: String, required: false },
     phone: { type: String, required: false },
-    contact: { type: String, required: false },
-    qty: { type: Number, default: 1}
+    seller: { type: String, required: false },
+    quantity: { type: Number, default: 1},
+
+
 }, { timestamps: true });
+
 
 // export the model to be accessed in server.js
 module.exports = mongoose.model('Item', itemSchema);
