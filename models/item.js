@@ -8,11 +8,11 @@ const itemSchema = new Schema({
     brand: { type: String, required: true },
     description: { type: String, required: true},
     sold: Boolean,
-    image: { type:String, required: true},
-    price: { type: Number, required: true },
-    Email: { type: String, required: true },
-    phone: { type: String, required: true },
-    contact: { type: String, required: true },
+    image: { type:String, required: false},
+    price: { type: Number, required: false },
+    Email: { type: String, required: false },
+    phone: { type: String, required: false },
+    contact: { type: String, required: false },
     qty: { type: Number, default: 1}
 }, { timestamps: true });
 

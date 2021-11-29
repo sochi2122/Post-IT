@@ -31,20 +31,12 @@ app.use(methodOverride('_method'));
 // mount routes
 app.use('/items', itemsController);
 
-//create
+//create  `We! 
 
+app.get('/', (req, res) => {
+res.send(`Go to <a href="/items">localhost:3000/items</a> to get started!`)
 
-// Create route
-// app.post('/items', (req, res) => {
-  // Item.create(req.body, (err, createdItem) => {
-      // res.send(createdItem);
-  // }); // this code runs asynchronous
-// });
-
-// app.get('/', (req, res) => {
-// res.send(`Welcome to the Thrift Shop app! Go to <a href="/books">localhost:3000/items</a> to get started!`
-// )
-// })
+})
 // 
 
 // app.get('/items', (req, res) => {

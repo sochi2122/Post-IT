@@ -92,6 +92,9 @@ itemsRouter.put('/:id', (req, res) => {
 
 // Create Route
 itemsRouter.post('/', (req, res) => {
+    // req.body.id = item.length + 1;
+    // item.push(req.body);
+
     if(req.body.sold === 'on') {
         req.body.sold = true;
     } else {

@@ -7,6 +7,7 @@
     <title>See Item Details</title>
 </head>
 <body>
+
     <h1>Details for <%= item.name %></h1>
     <p>Made By: <%= item.brand %></p>
     <p>Description: <%= item.description %></p>
@@ -20,5 +21,9 @@
         <form action="/items/<%= item._id%>/buy" method="POST">
             <input <%= item.qty ? '' : 'disabled' %> type="submit" value="<%= item.qty ? 'Buy': 'Out of Stock' %>">
         </form> 
+   
+   
+   
+   
     </body>
 </html>
