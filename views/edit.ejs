@@ -9,11 +9,27 @@
 <body>
     <h1>Edit Item Page</h1>
     <form action="/items/<%= item._id %>?_method=PUT" method="POST"><br>
-        Name: <input type="text" name="title" value="<%= item.name %>"><br>
-        Brand: <input type="text" name="author" value="<%= item.brand %>"><br>
+        Item : <input type="text" name="item" value="<%= item.item %>"><br>
+        Brand: <input type="text" name="brand" value="<%= item.brand %>"><br>
         Description: <input type="text" name="Description" value="<%= item.description %>"><br>
+        Quantity: <input type="text" name="quantity" value="<%= item.quantity %>"><br>
+        Image: <input type="file" name="image" value="<%= item.image %>"><br>
+        Price: $ <input type="number" name="price" value="<%= item.price %>"><br>
+        Email: <input type="text" name="email" value="<%= item.email %>"><br>
+        Phone: <input type="number" name="phone" value="<%= item.phone %>"><br>
+        Sellers Name: <input type="text" name="seller" value="<%= item.seller %>"><br>
+
+
+
+       
+       
+       
+       
         Sold: <input type="checkbox" name="Sold" <%= item.sold ? 'checked' : '' %>><br>
-        <input type="submit" value="Add Item">  
+
+        
+        <input type="submit" value="Edit Item">  
     </form>
+
 </body>
 </html>

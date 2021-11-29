@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 // define the schema
 const itemSchema = new Schema({
-    name: { type: String, required: true },
+    item: { type: String, required: true },
     brand: { type: String, required: true },
     description: { type: String, required: true},
     sold: Boolean,

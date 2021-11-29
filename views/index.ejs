@@ -10,15 +10,29 @@
 
     <h1>My store List</h1>
     <ul style="list-style: none;">
+       
+       
         <% items.forEach(b => { %>
             <li style="margin-bottom: 1rem;">
                 <form style="display: inline; margin-right: 1rem;" action="/items/<%= b._id %>?_method=DELETE" method="POST">
                     <input type="submit" value="DELETE">
                 
                 </form>
+
+                <h1> Item: <%= b.item %> </h1>
+                <p>  Made By: <%= b.brand %></p>
+                <p>  Description:  <%= b.description %></p>
+
+                <p><a img src= <%= b.image %></a></p>
+                <p>Quantity: <%= b.quantity %> of these in stock</p>
+                <p>Price: $ <%= b.price %></p>
+                <p>Email: <%= b.email %></p>
+                <p>Phone: <%= b.phone %></p>
+                <p>Seller Name: <%= b.seller %></p>
+                
+
                 <a style="margin: 0 1rem 0 0;" href="/items/<%= b._id %>/edit">EDIT</a>
                 <a href="/items/<%= b._id %>">
-                    <%= b.name %>
                 </a>
                 - 
                 <p style="display: inline; margin-left: .5rem;">There are currently <%= b.qty %> of these available</p>
