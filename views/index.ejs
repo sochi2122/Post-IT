@@ -18,47 +18,58 @@
 
 
     <h1>My store List</h1>
-    <ul style="list-style: none;">
+
        
-       
+    <div class="container">
+
         <% items.forEach(b => { %>
            
+
            
-           
+            <div class="row">
+
+                <div class="one-half column">
+
            
            
            
 
-                <h1> Item: <%= b.item %> </h1>
+                <h3> Item: <%= b.item %> </h3>
                 <p>  Made By: <%= b.brand %></p>
                 <p>  Description:  <%= b.description %></p>
 
                 <p><a img src= <%= b.image %></a></p>
                 <p>Quantity: <%= b.quantity %> of these in stock</p>
                 <p>Price: $ <%= b.price %></p>
-                <p>Email: <%= b.email %></p>
+    
+                <p>Email: <a href = "mailto: <%= b.email %> ">Send Email to <%= b.seller %></a></p>
+
+
                 <p>Phone: <%= b.phone %></p>
                 <p>Seller Name: <%= b.seller %></p>
                 
 
                 
                 
-                <li style="margin-bottom: 1rem;">
                     <form style="display: inline; margin-right: 1rem;" 
                     action="/items/<%= b._id %>?_method=DELETE" method="POST">
                         <input type="submit" value="DELETE <%= b.item %> ">
                     
-                    </li>
-                    <li>
+
                         <button><a style="margin: 0 1rem 0 0;" href="/items/<%= b._id %>/edit">EDIT <%= b.item %> </a></button>
 
-                    </li>
 
-                
+                </div>
+            </div>
+
+     
+     
+
+
 
         <% }) %>
-    </ul>
-   
+
+</div>
    
    
   
