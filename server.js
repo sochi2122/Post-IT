@@ -23,6 +23,7 @@ const db = mongoose.connection;
 db.on('connected', () => console.log('Connected to MongoDB'));
 db.on('error', (err) => console.log('MongoDB Error: ' + err.message));
 
+app.use(express.static(__dirname + '/public'));
 
 // mount middleware
 app.use(express.urlencoded({ extended: false })); // creates req.body
