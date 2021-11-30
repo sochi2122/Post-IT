@@ -1,0 +1,15 @@
+{
+    "_id": {
+        "$oid": "61a547e5f8282f0feec4ae69"
+    },
+    "item": "imac",
+    "brand": "Apple",
+    "description": "Bad Condition. Has old bitcoin",
+    "image": "/images/4.jpg",
+    "sold": "0",
+    "quantity": "2",
+    "price": "1000000000",
+    "email": "sin@shinochi.com",
+    "phone": "212-222-9877",
+    "seller": "Shin Quadruplet"
+}
