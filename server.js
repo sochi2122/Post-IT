@@ -35,7 +35,8 @@ app.use('/items', itemsController);
 //create  `We! 
 
 app.get('/', (req, res) => {
-res.render('index.ejs')
+
+res.redirect('/items')
 
 })
 // 
@@ -100,4 +101,4 @@ const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
     console.log('Express is listening on port: ' + PORT);
-});
+})
