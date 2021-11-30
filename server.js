@@ -35,7 +35,7 @@ app.use('/items', itemsController);
 //create  `We! 
 
 app.get('/', (req, res) => {
-res.send(`Go to <a href="/items">localhost:3000/items</a> to get started!`)
+res.render('index.ejs')
 
 })
 // 
