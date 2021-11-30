@@ -7,6 +7,10 @@
     <title>Edit Item Page</title>
 </head>
 <body>
+    <%- include('partials/header.ejs') %>
+
+
+
     <h1>Edit Item Page</h1>
     <form action="/items/<%= item._id %>?_method=PUT" method="POST"><br>
         Item : <input type="text" name="item" value="<%= item.item %>"><br>
@@ -31,5 +35,7 @@
         <input type="submit" value="Edit Item">  
     </form>
 
+
+<%- include('partials/footer.ejs') %>
 </body>
 </html>

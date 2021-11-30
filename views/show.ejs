@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>See Item Details</title>
 </head>
-<body>
+<body>      
+    <%- include('partials/header.ejs') %>
 
     <h1>Details for <%= item.item %></h1>
     <p>Made By: <%= item.brand %></p>
@@ -28,6 +29,7 @@
    
    
    
-   
+        <%- include('partials/footer.ejs') %>
+    
     </body>
 </html>

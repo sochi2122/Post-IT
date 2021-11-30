@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Item Page</title>
 </head>
-<body>
+<body>     
+    <%- include('partials/header.ejs') %>
+
     <h1>New Item Page</h1>
     <form action="/items" method="post"><br>
         Item: <input type="text" name="item"><br>
@@ -21,5 +23,7 @@
         seller's name: <input type="text" name="seller"><br>
         <input type="submit" value="Add Item">
     </form>
+
+    <%- include('partials/footer.ejs') %>
 </body>
 </html>
