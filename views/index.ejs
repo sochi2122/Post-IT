@@ -27,19 +27,11 @@
        
     <div class="container">
        
-       
+        <div class="row">
+
+            <div class="one-half column">
 
         <% items.forEach(b => { %>
-            <div class="row">
-                <div class="one-half column">
-
-           
-           
-
-           
-
-           
-           
            
 
                 <h3> Item: <%= b.item %> </h3>
@@ -58,7 +50,6 @@
                 <p>Phone: <%= b.phone %></p>
                 <p>Seller Name: <%= b.seller %></p>
                 
-            </div>
 
                 
                 
@@ -68,6 +59,7 @@
                     
 
                         <button><a style="margin: 0 1rem 0 0;" href="/items/<%= b._id %>/edit">EDIT <%= b.item %> </a></button>
+                    </div>
 
 
             </div>

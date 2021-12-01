@@ -9,6 +9,11 @@
 <body>      
     <%- include('partials/header.ejs') %>
 
+<main>
+    <div class="container">
+    
+    
+
     <h1>Details for <%= item.item %></h1>
     <p>Made By: <%= item.brand %></p>
     <p>Description: <%= item.description %></p>
@@ -22,16 +27,16 @@
     <p><%= item.image %></p>
 
 
-    
+    </div>
     
     
         <form action="/items/<%= item._id%>/buy" method="POST">
             <input <%= item.qty ? '' : 'disabled' %> type="submit" value="<%= item.qty ? 'Buy': 'Out of Stock' %>">
         </form> 
    
-   
+    </main>
+
    
         <%- include('partials/footer.ejs') %>
-    
     </body>
 </html>
