@@ -12,7 +12,9 @@
 
 
     <h1>Edit Item Page</h1>
+
     <form class=form action="/items/<%= item._id %>?_method=PUT" method="POST"><br>
+
         Item : <input type="text" name="item" value="<%= item.item %>"><br>
         Brand: <input type="text" name="brand" value="<%= item.brand %>"><br>
         Description: <input type="text" name="Description" value="<%= item.description %>"><br>
@@ -22,15 +24,6 @@
         Email: <input type="email" name="email" value="<%= item.email %>"><br>
         Phone: <input type="number" name="phone" value="<%= item.phone %>"><br>
         Sellers Name: <input type="text" name="seller" value="<%= item.seller %>"><br>
-
-
-
-       
-       
-       
-       
-        Sold: <input type="checkbox" name="Sold" <%= item.sold ? 'checked' : '' %>><br>
-
         
         <input type="submit" value="Edit Item">  
     </form>
