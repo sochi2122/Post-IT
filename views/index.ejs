@@ -1,84 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Item List</title>
-    
-    
-    
-    
-    
-    
+
+
 </head>
+
 <body>
 
+    <Div>  
+<header>
+    <%- include('partials/header.ejs') %>
+<header>
 
-     <%- include('partials/header.ejs') %>
-
-     <main> 
+</Div>
 
 
-
-
-    <h1>My store List</h1>
-
-       
-    <div class="container">
-       
-        <div class="row">
-
-            <div class="one-half column">
-
-        <% items.forEach(b => { %>
-           
-
-                <h3> Item: <%= b.item %> </h3>
-                <p>  Made By: <%= b.brand %></p>
-                <p>  Description:  <%= b.description %></p>
-                <a href = "<%= b.image %>" target = "_self"> 
-                    <img src = "<%= b.image %>" width="500" height="600" alt = "item" border = "0"/> 
-                 </a>
-
-                <p>Quantity: <%= b.quantity %> of these in stock</p>
-                <p>Price: $ <%= b.price %></p>
     
-                <p>Email: <a href = "mailto: <%= b.email %> ">Send Email to <%= b.seller %></a></p>
+<main>
+
+<div class="container">
+        <div class="flex-grid">
 
 
-                <p>Phone: <%= b.phone %></p>
-                <p>Seller Name: <%= b.seller %></p>
-                
+               
 
-                
-                
-                    <form style="display: inline; margin-right: 1rem;" 
-                    action="/items/<%= b._id %>?_method=DELETE" method="POST">
-                        <input type="submit" value="DELETE <%= b.item %> ">
-                    
+               
 
-                        <button><a style="margin: 0 1rem 0 0;" href="/items/<%= b._id %>/edit">EDIT <%= b.item %> </a></button>
-                    </div>
+                        <% items.forEach(b => { %>
 
 
-            </div>
-
-     
-     
+                            <div class="grid-item">
 
 
+                            <td class="">
+                                <p> Item: <%= b.item %> </p>
+                            </td>
+                            <td class="   ">
+                                <p> Made By: <%= b.brand %></p>
+                            </td>
 
-        <% }) %>
+                            <td class="   "> <a class="image" href="<%= b.image %>" 
+                                target="_self">
+                                    <img src="<%= b.image %>" alt="item" border="0" />
+                                </a> </td>
 
-</div>
-   
-   
-  
-</main>
 
-<%- include('partials/footer.ejs') %>
+                            <td class=" description  ">
+                                <p> Description: <%= b.description %></p>
+                            </td>
+
+
+
+
+                            <td class="   ">
+                                <p>Price: $ <%= b.price %></p>
+                            </td>
+
+
+                            <td class="   ">
+                                <p>Seller Name: <%= b.seller %></p>
+                            </td>
+
+
+                            <td class="   ">
+                                <p>Email: <a href="mailto: <%= b.email %> ">Send Email to <%= b.seller %></a></p>
+                            </td>
+
+
+
+                            <td class="   ">
+                                <p>Phone: <%= b.phone %></p>
+                            </td>
+
+                            
+                            
+                            
+
+
+                            <td class="   ">
+                                <form action="/items/<%= b._id %>?_method=DELETE" method="POST">
+                                    <input type="button" width="25%" type="submit" value="DELETE ">
+                            </td>
+
+                            <td class="   ">
+                                <button input type="button" width="25%"><a href="/items/<%= b._id %>/edit">EDIT </a></button>
+                            </td>
+
+
+                            </div class="grid-item">
+
+
+
+
+
+
+                            <% }) %>
+
+
+
+
+                </div  class="flex-grid">>
+             </div class=container>
+
+
+
+    </main>
+
+    <%- include('partials/footer.ejs') %>
 
 
 </body>
+
 </html>
