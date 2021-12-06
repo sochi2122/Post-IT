@@ -9,6 +9,11 @@ Some of these sample items are actual items that I have recently sold within the
 Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 
 
+See ERD 
+
+<img width="677" alt="Flow Chart" src="https://user-images.githubusercontent.com/90932673/144905564-86a885f0-048e-4037-8882-49c0830830aa.png">
+
+
 Technologies Used: JavaScript, HTML, CSS, MongoDB, 
 
 
