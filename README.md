@@ -6,7 +6,14 @@ Buyers and sellers will be able to connect on the "Post Me" website. Sellers can
 
 Some of these sample items are actual items that I have recently sold within the last two weeks on either Craigslist or EBay.
 
+
 Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
+
+
+
+
+
+
 
 
 Technologies Used: JavaScript, HTML, CSS, MongoDB, 
