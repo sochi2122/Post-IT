@@ -11,9 +11,10 @@ Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 
 
 
+See ERD 
 
-
-
+<img width="677" alt="Flow Chart" src="https://user-images.githubusercontent.com/90932673/144905564-86a885f0-048e-4037-8882-49c0830830aa.png">
+>>>>>>> fd8df6e3f4362a781879772e13c0bb41a2114a4c
 
 
 Technologies Used: JavaScript, HTML, CSS, MongoDB, 
