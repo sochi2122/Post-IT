@@ -6,29 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Item Page</title>
 </head>
+
 <body>
     <%- include('partials/header.ejs') %>
+<main>
 
 
 
+
+
+<div class="item">
+    
     <h1>Edit Item Page</h1>
 
     <form class=form action="/items/<%= item._id %>?_method=PUT" method="POST"><br>
 
-        Item : <input type="text" name="item" value="<%= item.item %>"><br>
-        Brand: <input type="text" name="brand" value="<%= item.brand %>"><br>
-        Description: <input type="text" name="Description" value="<%= item.description %>"><br>
-        Quantity: <input type="text" name="quantity" value="<%= item.quantity %>"><br>
-        Image: <input type="url" name="image" value="<%= item.image %>"><br>
-        Price: $ <input type="number" name="price" value="<%= item.price %>"><br>
-        Email: <input type="email" name="email" value="<%= item.email %>"><br>
-        Phone: <input type="number" name="phone" value="<%= item.phone %>"><br>
-        Sellers Name: <input type="text" name="seller" value="<%= item.seller %>"><br>
+        Item : <input type="text" name="item"   maxlength="22" value="<%= item.item %>"><br>
+        Description: <input type="text" name="description"  maxlength="800" value="<%= item.description %>"><br>
+        Image: <input type="string" name="image" value="<%= item.image %>"><br>
+        Price: $ <input type="number" name="price"  maxlength="6" value="<%= item.price %>"><br>
+        Email: <input type="email" name="email"  maxlength="80" value="<%= item.email %>"><br>
+        Phone: <input type="tel" name="phone" placeholder="123-245-678"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="<%= item.phone %>"><br>
+        Seller's Name: <input type="text" name="seller"  maxlength="10" value="<%= item.seller %>"><br>
         
         <input type="submit" value="Edit Item">  
+
     </form>
+    </div>
 
-
+</main>
 <%- include('partials/footer.ejs') %>
 </body>
 </html>

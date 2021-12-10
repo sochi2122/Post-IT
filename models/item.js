@@ -5,15 +5,13 @@ const Schema = mongoose.Schema;
 // define the schema
 const itemSchema = new Schema({
     item: { type: String, required: true },
-    brand: { type: String, required: true },
+    brand: { type: String, required: false },
     description: { type: String, required: true},
-    sold: Boolean,
     image: { type:String, required: false},
     price: { type: Number, required: false },
     email: { type: String, required: false },
     phone: { type: String, required: false },
     seller: { type: String, required: false },
-    quantity: { type: Number, default: 1},
 
 
 }, { timestamps: true });

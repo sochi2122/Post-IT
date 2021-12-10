@@ -9,20 +9,25 @@
 <body>     
     <%- include('partials/header.ejs') %>
 
-    <h1>New Item Page</h1>
-    <form action="/items" method="post"><br>
-        Item: <input type="text" name="item"><br>
-        Brand: <input type="text" name="brand"><br>
-        Description: <input type="text" name="description"><br>
-        Image: <input type="string" href="item.item"></a><br>
-        Sold: <input type="checkbox" name="sold"><br>
-        Quantity: <input type="number" name="quantity"><br>
-        price: <input type="number" name="price"><br>
-        email: <input type="text" name="email"><br>
-        phone: <input type="text" name="phone"><br>
-        seller's name: <input type="text" name="seller"><br>
+    <br><br><br>
+
+
+<main>
+    <form action="/items" method="post" width= "90vh"><br>
+        Item: <input width= "110px" type="text" name="item"  maxlength="22"><br>
+        Description: <input width= "110px" type="description" maxlength="800" name="description"><br>
+        Image: <input width= "110px" type="url" name="image"></a><br>
+        Price: <input width= "110px" type="number" name="price" maxlength="6"><br>
+        Email: <input width= "110px" type="email" name="email" maxlength="80"><br>
+        Phone: <input width= "110px" type="tel" name="phone"  placeholder="123-245-678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" ><br>
+        Seller's name: <input width= "110px" type="text" name="seller" maxlength="10"><br>
         <input type="submit" value="Add New Item">
     </form>
+
+
+
+
+    </main>
 
     <%- include('partials/footer.ejs') %>
 </body>
