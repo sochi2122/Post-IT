@@ -33,26 +33,24 @@
         <div class="mb-3">
 
 
-    <form class="form" action="/items/<%= item._id %>?_method=PUT" method="POST" width="90vh"><br>
+        <form class="form" action="/items/<%= item._id %>?_method=PUT" method="POST"><br>
 
 
 
         Item :
         <input class="title" type="text" name="item"   maxlength="25" value="<%= item.item %>"><br>
         
-    
+    </div>
 
 
-        <div class="mb-3"><p>
-        <label for="exampleFormControlTextarea1" class="form-label">Description:</label> </p>
-        <textarea class="form-control, desc" id="exampleFormControlTextarea1" rows="3" name="description"  maxlength="800" value="<%= item.description %>"></textarea>
-        </div>
+        <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label,">Description:</label>
+        <textarea class="title, form-control" id="exampleFormControlTextarea1" rows="3" cols="10" name="description"  
+        maxlength="800" value="<%= item.description %>"></textarea>
     
-        
-        <p>
-        Image: <input rows="3" class="title" type="string" name="image" value="<%= item.image %>"><br>
-       </p>
         </div>
+
+      Image: <input rows="3" class="title" type="string" name="image" value="<%= item.image %>"><br>
        
 
        <div class="mb-3">

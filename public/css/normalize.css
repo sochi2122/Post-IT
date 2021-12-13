@@ -38,8 +38,9 @@ content: center;
 
 
 
-
-
+#exampleFormControlTextarea1{
+  width: 65%;
+}
 
 .item{
   border: 1px red solid;
