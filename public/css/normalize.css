@@ -12,7 +12,7 @@ main{
   border-bottom: 2px solid gray;
   outline: 2px;
   font-size: 1.3rem;
-  color: white;
+  color: rgb(5, 0, 0);
   padding: 7px 0;
   background: transparent;
   transition: 0.2s;
@@ -66,9 +66,8 @@ img{
 }
 
 body{
-background-color: black;
-color:antiquewhite;
-font-size: 8px;
+background-color: rgb(54, 29, 167);
+color:rgb(30, 197, 80);
 font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
 line-height: 1.6;
 font-weight: 400;
@@ -158,15 +157,14 @@ a:hover {
   flex-flow: row wrap;
   text-align: left;
   word-wrap: break-word;  
+  color:#333
 
 }
 
-.desc{
-  height: 155px;
-  width: 65%;
-  text-size-adjust: fit-content;
- }
-
+/* .desc{ */
+/* color:black */
+ /* } */
+/*  */
     
     
     input[type="email"],
@@ -178,7 +176,6 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
-  height: 38px;
   padding: 6px 10px; /* The 6px vertically*/
   background-color: #fff;
   border: 1px solid #D1D1D1;
