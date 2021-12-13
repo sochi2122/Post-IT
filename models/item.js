@@ -7,7 +7,7 @@ const itemSchema = new Schema({
     item: { type: String, required: true },
     brand: { type: String, required: false },
     description: { type: String, required: true},
-    image: { type:String, required: false},
+    image: { type:String, required: true},
     price: { type: Number, required: false },
     email: { type: String, required: false },
     phone: { type: String, required: false },

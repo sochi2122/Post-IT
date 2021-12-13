@@ -1,3 +1,18 @@
+.form{
+
+  font-family: inherit;
+  border: 0;
+  border-bottom: 2px solid gray;
+  outline: 0;
+  font-size: 1.3rem;
+  color: white;
+  padding: 7px 0;
+  background: transparent;
+  transition: 0.2s;
+
+}
+
+
 .container {
   display: flex;
   flex-wrap: auto;
@@ -38,8 +53,8 @@ p{
 
 
 img{
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 150px;
   margin: 20px;
 }
 
@@ -66,6 +81,10 @@ font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, san
 
 header{
 border: 1px blue solid;
+width: 100%;
+margin: 0;
+
+
 }
 
 
@@ -122,11 +141,36 @@ a:hover {
     padding: 1rem 1.5rem;
     white-space: pre; }
     
-    input[type="description"]{
-      height: 75px;
-      width: 120px;
-      font-display: wrap;
-    }
+
+
+
+   
+   
+   
+   
+   
+
+    .title{
+  height: 20px;
+  width: 65%;
+  font-display: inline-block;
+  align-content: center;
+  display:flex;
+  flex-flow: row wrap;
+  text-align: left;
+  word-wrap: break-word;  
+  font-display: ;
+
+}
+
+.desc{
+  height: 155px;
+  width: 65%;
+  text-size-adjust: fit-content;
+  overflow-wrap: anywhere;
+ }
+
+    
     
     input[type="email"],
 input[type="number"],

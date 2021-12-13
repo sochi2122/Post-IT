@@ -8,26 +8,37 @@
 </head>
 
 <body>
+    <div>
     <%- include('partials/header.ejs') %>
+    </div>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 <main>
 
 
 
 
 
-<div class="item">
     
     <h1>Edit Item Page</h1>
+    <div class="item">
 
-    <form class=form action="/items/<%= item._id %>?_method=PUT" method="POST"><br>
+    <form class="form" action="/items/<%= item._id %>?_method=PUT" method="POST"><br>
 
-        Item : <input type="text" name="item"   maxlength="22" value="<%= item.item %>"><br>
-        Description: <input type="text" name="description"  maxlength="800" value="<%= item.description %>"><br>
-        Image: <input type="string" name="image" value="<%= item.image %>"><br>
-        Price: $ <input type="number" name="price"  maxlength="6" value="<%= item.price %>"><br>
-        Email: <input type="email" name="email"  maxlength="80" value="<%= item.email %>"><br>
-        Phone: <input type="tel" name="phone" placeholder="123-245-678"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="<%= item.phone %>"><br>
-        Seller's Name: <input type="text" name="seller"  maxlength="10" value="<%= item.seller %>"><br>
+
+
+        
+        Item : <input class="title" type="text" name="item"   maxlength="22" value="<%= item.item %>"><br>
+       
+        Description: 
+            <input class="desc" type="desc" name="description"  maxlength="800" value="<%= item.description %>"><br>
+        
+        
+        Image: <input class="title" type="string" name="image" value="<%= item.image %>"><br>
+        Price: $ <input class="title" type="number" name="price"  maxlength="6" value="<%= item.price %>"><br>
+        Email: <input class="title" type="email" name="email"  maxlength="80" value="<%= item.email %>"><br>
+        Phone: <input  class="title" type="tel" name="phone" placeholder="123-245-678"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="<%= item.phone %>"><br>
+        Seller's Name: <input  class="title" type="text" name="seller"  maxlength="10" value="<%= item.seller %>"><br>
         
         <input type="submit" value="Edit Item">  
 
