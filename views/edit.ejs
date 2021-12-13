@@ -21,28 +21,64 @@
 
     
     <h1>Edit Item Page</h1>
-    <div class="item">
+
+
+    <div class="container">
+        <div class="mb-3">
+
 
     <form class="form" action="/items/<%= item._id %>?_method=PUT" method="POST"><br>
 
 
 
-        
+        <div class="mb-3">
         Item : <input class="title" type="text" name="item"   maxlength="22" value="<%= item.item %>"><br>
-       
-        Description: 
-            <input class="desc" type="desc" name="description"  maxlength="800" value="<%= item.description %>"><br>
+        </div>
+
+        <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Description:</label>
+        <input>
+        <textarea class="form-control, desc" id="exampleFormControlTextarea1" rows="3" name="description"  maxlength="800" value="<%= item.description %>"></textarea>
+        <input>
+        </div>
+    
         
-        
+        <div class="mb-3">
+
         Image: <input class="title" type="string" name="image" value="<%= item.image %>"><br>
+       </div>
+       
+
+       <div class="mb-3">
+
         Price: $ <input class="title" type="number" name="price"  maxlength="6" value="<%= item.price %>"><br>
-        Email: <input class="title" type="email" name="email"  maxlength="80" value="<%= item.email %>"><br>
+        </div>
+
+
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input value="<%= item.email %>" maxlength="30" name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+
+
+               <div class="mb-3">
+
         Phone: <input  class="title" type="tel" name="phone" placeholder="123-245-678"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="<%= item.phone %>"><br>
+        
+        </div>
+        
+        
+
+        <div class="mb-3">
+
         Seller's Name: <input  class="title" type="text" name="seller"  maxlength="10" value="<%= item.seller %>"><br>
         
+        </div>
+
         <input type="submit" value="Edit Item">  
 
     </form>
+    </div>
     </div>
 
 </main>
