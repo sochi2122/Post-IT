@@ -17,31 +17,36 @@
     <main>
         <div class="container">
 
-            <div class="item" <h1>Details for: <%= item.item %></h1>
-
+           <div class="item">
+            <h1>Details for: <%= item.item %></h1>
 
                 <p>Description: <%= item.description%></p>
 
-                <img src="<%= item.image %>"></a>
+                <img width="300em" height="300em" src="<%= item.image %>"> </img>
 
                 <p>Price: $ <%= item.price %></p>
+
                 <br>
                 <p> <a target="popup" href="mailto: <%= item.email %> ">Send Email to <%= item.seller %></a></p>
                 <br>
                 <p>Phone: <a href="tel:<%= item.phone %>"></href><%= item.phone %></p>
                 <br>
 
-            </div>
-        </div>
 
 
-        <!-- <form action="/items/<%= item._id%>/buy" method="POST"><input <%= item.qty ? '' : 'disabled' %> type="submit" value="<%= item.qty ? 'Buy': 'Out of Stock' %>"></form>  -->
 
         <form action="/items/<%= item._id %>?_method=DELETE" method="POST">
-            <input width="25%" type="submit" value="DELETE ">
-            <button width="25%"><a href="/items/<%= item._id %>/edit">EDIT </a></button>
+            <input type="submit" value="DELETE "></form> 
 
 
+            <div style="padding: 5px;">
+
+            <button><a href="/items/<%= item._id %>/edit">EDIT </a></button> </div>
+
+
+</div>
+
+</div>
 
     </main>
 

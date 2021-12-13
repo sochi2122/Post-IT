@@ -62,21 +62,20 @@ width: 100vh;
  * Remove default margin.
  */
 
-body {
-  
-  height: 100vh;
-  width: 100vh;
-  margin: 5px;
-  display: grid;
-  grid-template-rows: 50px 90px auto 100px;
-  flex-wrap: wrap;
-  grid-template-columns: 4fr 4fr;
-  grid-template-areas: 
-"hdr" 
-"grid" 
-"ftr" 
-   
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

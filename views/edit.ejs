@@ -18,55 +18,57 @@
 
 
 
-
+<div class="container">
     
     <h1>Edit Item Page</h1>
 
 
-    <div class="container">
+    <div class="grid">
         <div class="mb-3">
 
 
-    <form class="form" action="/items/<%= item._id %>?_method=PUT" method="POST"><br>
+    <form class="form" action="/items/<%= item._id %>?_method=PUT" method="POST" width="90vh"><br>
 
 
 
-        <div class="mb-3">
-        Item : <input class="title" type="text" name="item"   maxlength="22" value="<%= item.item %>"><br>
-        </div>
+        Item :
+        <input class="title" type="text" name="item"   maxlength="80" value="<%= item.item %>"><br>
+        
+    
 
-        <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Description:</label>
-        <input>
+
+        <div class="mb-3"><p>
+        <label for="exampleFormControlTextarea1" class="form-label">Description:</label> </p>
         <textarea class="form-control, desc" id="exampleFormControlTextarea1" rows="3" name="description"  maxlength="800" value="<%= item.description %>"></textarea>
-        <input>
         </div>
     
         
-        <div class="mb-3">
-
-        Image: <input class="title" type="string" name="image" value="<%= item.image %>"><br>
-       </div>
+        <p>
+        Image: <input rows="3" class="title" type="string" name="image" value="<%= item.image %>"><br>
+       </p>
+        </div>
        
 
        <div class="mb-3">
-
-        Price: $ <input class="title" type="number" name="price"  maxlength="6" value="<%= item.price %>"><br>
+        <p>
+        Price: $ <input placeholder="$500" class="title" type="number" name="price"  maxlength="6" value="<%= item.price %>"><br>
+        </p>
+    
         </div>
-
 
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input value="<%= item.email %>" maxlength="30" name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
 
+            <label class="title">Email address: </label>
+            <input class="title" value="<%= item.email %>" name="email"  id="exampleFormControlInput1" placeholder="name@example.com"  maxlength="80">
+        </div>
 
                <div class="mb-3">
-
+<p>
         Phone: <input  class="title" type="tel" name="phone" placeholder="123-245-678"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="<%= item.phone %>"><br>
-        
+        </p>
+
         </div>
-        
+            
         
 
         <div class="mb-3">
@@ -78,7 +80,6 @@
         <input type="submit" value="Edit Item">  
 
     </form>
-    </div>
     </div>
 
 </main>
