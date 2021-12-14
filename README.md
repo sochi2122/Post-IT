@@ -11,9 +11,14 @@ Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 
 
 
-See ERD 
+See ERD below:
 
 <img width="677" alt="Flow Chart" src="https://user-images.githubusercontent.com/90932673/144905564-86a885f0-048e-4037-8882-49c0830830aa.png">
+
+Item Schema:
+
+<img width="511" alt="Screen Shot 2021-12-14 at 1 01 52 AM" src="https://user-images.githubusercontent.com/90932673/145942093-ba5996df-a638-4773-a819-310a7939eb99.png">
+
 
 
 Technologies Used: JavaScript, HTML, CSS, MongoDB, Bootstrap, CRUD, Skeleton, and IMGbb.com for image hosting.
