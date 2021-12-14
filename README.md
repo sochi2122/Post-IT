@@ -27,6 +27,14 @@ Technologies Used: JavaScript, HTML, CSS, MongoDB, Bootstrap, CRUD, Skeleton,
 <img width="563" alt="Screen Shot 2021-12-04 at 3 43 27 PM" src="https://user-images.githubusercontent.com/90932673/144724072-9967a026-9c70-476f-b1f7-fb8845de227a.png">
 
 
+
+
+##Screenshots of the final version.
+
+
+
+
+
 Getting Started: 
 
 Buyers: Look through postings and click the email link to buy something new!
