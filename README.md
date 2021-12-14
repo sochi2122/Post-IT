@@ -17,7 +17,7 @@ See ERD
 >>>>>>> fd8df6e3f4362a781879772e13c0bb41a2114a4c
 
 
-Technologies Used: JavaScript, HTML, CSS, MongoDB, 
+Technologies Used: JavaScript, HTML, CSS, MongoDB, Bootstrap, CRUD, Skeleton, 
 
 
 ##Screenshots of the initial homepage, edit page and add page with CRUD capability.

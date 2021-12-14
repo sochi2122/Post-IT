@@ -1,21 +1,15 @@
-// require dependencies
 const express = require('express');
-// create a router object
 const itemsRouter = express.Router();
 
 
- const Item = require('../models/item');
+const Item = require('../models/item');
 
 
-// list our router actions
 
-// Seed route
 
-// We are already at /items/
 
 itemsRouter.get('/seed', async (req, res) => {
-    const data = [
-        {
+    const data = [{
             name: 'Xbox 360',
             brand: 'Microsoft',
             description: `The console works fine but the tray is sticky. It
@@ -57,7 +51,9 @@ itemsRouter.get('/destroy-data', async (req, res) => {
 // Index Route
 itemsRouter.get('/', (req, res) => {
     Item.find({}, (err, items) => {
-        res.render('index.ejs', { items });
+        res.render('index.ejs', {
+            items
+        });
     });
 });
 
@@ -81,21 +77,20 @@ itemsRouter.delete('/:id', (req, res) => {
 itemsRouter.put('/:id', (req, res) => {
     req.body.sold = !!req.body.sold; // !!'on' === true || !!undefined === false
     Item.findByIdAndUpdate(
-        req.params.id, 
-        req.body, 
-        { new: true },
+        req.params.id,
+        req.body, {
+            new: true
+        },
         (err, item) => {
-          res.redirect(`/items/${req.params.id}`)
-    });
+            res.redirect(`/items/${req.params.id}`)
+        });
 });
 
 
 // Create Route
 itemsRouter.post('/', (req, res) => {
-    // req.body.id = item.length + 1;
-    // item.push(req.body);
-console.log(req.body)
-    if(req.body.sold === 'on') {
+    console.log(req.body)
+    if (req.body.sold === 'on') {
         req.body.sold = true;
     } else {
         req.body.sold = false;
@@ -110,7 +105,9 @@ console.log(req.body)
 
 itemsRouter.get('/:id/edit', (req, res) => {
     Item.findById(req.params.id, (err, item) => {
-        res.render('edit.ejs', { item });
+        res.render('edit.ejs', {
+            item
+        });
     });
 });
 
@@ -118,29 +115,13 @@ itemsRouter.get('/:id/edit', (req, res) => {
 // Show route
 
 itemsRouter.get('/:id', (req, res) => {
-    // Book.findById(req.params.id).then(() => {
-    //     res.render('show.ejs', { book })
-    // });
 
     Item.findById(req.params.id, (err, item) => {
-        res.render('show.ejs', { item });
+        res.render('show.ejs', {
+            item
+        });
     });
 });
-// export the router object so that we require it in server.js
 
-
-// Buy Route
-itemsRouter.post('/:id/buy', (req, res) => {
-    Item.findById(req.params.id, (err, item) => {
-        if(item.qty) {
-            item.qty--
-            item.save(() => {
-                res.redirect(`/items/${item._id}`);
-            });
-        } else {
-            res.redirect(`/items/${item._id}`);
-        }
-    });
-});
 
 module.exports = itemsRouter;
