@@ -4,7 +4,7 @@ About The Project
 
 Buyers and sellers will be able to connect on the "Post Me" website. Sellers can list their items and buyers can browse through the currently available items and then contact the seller if they wish to buy something. 
 
-Some of these sample items are actual items that I have recently sold within the last two weeks on either Craigslist or EBay.
+Some of these sample items are actual items that I have recently sold within the last 4 weeks on either Craigslist or EBay.
 
 
 Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
@@ -14,10 +14,9 @@ Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 See ERD 
 
 <img width="677" alt="Flow Chart" src="https://user-images.githubusercontent.com/90932673/144905564-86a885f0-048e-4037-8882-49c0830830aa.png">
->>>>>>> fd8df6e3f4362a781879772e13c0bb41a2114a4c
 
 
-Technologies Used: JavaScript, HTML, CSS, MongoDB, Bootstrap, CRUD, Skeleton, 
+Technologies Used: JavaScript, HTML, CSS, MongoDB, Bootstrap, CRUD, Skeleton, and IMGbb.com for image hosting.
 
 
 ##Screenshots of the initial homepage, edit page and add page with CRUD capability.
@@ -30,6 +29,13 @@ Technologies Used: JavaScript, HTML, CSS, MongoDB, Bootstrap, CRUD, Skeleton,
 
 
 ##Screenshots of the final version.
+
+<img width="1672" alt="Screen Shot 2021-12-14 at 12 18 11 AM" src="https://user-images.githubusercontent.com/90932673/145937886-54322865-20a3-459c-baa1-12b6080e3a1b.png">
+
+<img width="1690" alt="Screen Shot 2021-12-14 at 12 21 05 AM" src="https://user-images.githubusercontent.com/90932673/145937998-b08d66e0-1c00-4287-9b0a-42810a7efb20.png">
+
+
+<img width="1672" alt="Screen Shot 2021-12-14 at 12 18 11 AM" src="https://user-images.githubusercontent.com/90932673/145940658-df856870-8f35-464c-87a8-b1ce8e40ca44.png">
 
 
 
@@ -44,8 +50,7 @@ Sellers: List your item and fill out the fields. Make sure to leave an accurate 
 No authentication is required and sellers can be almost anonymous by using spoofed phone numbers and any email address. IP's and other identifying data is not collected.
 
 
-Next Steps: TBD
-
+Next Steps: add additional features to host crypto transactions or add additional fields for crypto transactions. Host images directly though mongoDB, 
 
 
 
