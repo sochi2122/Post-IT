@@ -30,14 +30,13 @@ Technologies Used: JavaScript, HTML, CSS, MongoDB, Bootstrap, CRUD, Skeleton, an
 
 ##Screenshots of the final version.
 
-<img width="1672" alt="Screen Shot 2021-12-14 at 12 18 11 AM" src="https://user-images.githubusercontent.com/90932673/145937886-54322865-20a3-459c-baa1-12b6080e3a1b.png">
 
-<img width="1690" alt="Screen Shot 2021-12-14 at 12 21 05 AM" src="https://user-images.githubusercontent.com/90932673/145937998-b08d66e0-1c00-4287-9b0a-42810a7efb20.png">
+<img width="1686" alt="index" src="https://user-images.githubusercontent.com/90932673/145941187-e586f5be-6be7-4785-957a-9314e09976a7.png">
 
+<img width="1678" alt="Show" src="https://user-images.githubusercontent.com/90932673/145941216-2b9db59a-4158-4a0b-8b6d-f80fb5b4f5a1.png">
 
-<img width="1672" alt="Screen Shot 2021-12-14 at 12 18 11 AM" src="https://user-images.githubusercontent.com/90932673/145940658-df856870-8f35-464c-87a8-b1ce8e40ca44.png">
-
-
+<img width="1683" alt="Add" src="https://user-images.githubusercontent.com/90932673/145941228-b6a1d404-f03f-4df2-b964-98d69607393c.png">
+<img width="1683" alt="Edit" src="https://user-images.githubusercontent.com/90932673/145941229-2799be91-71e2-4177-a158-95f9babd5b24.png">
 
 
 
