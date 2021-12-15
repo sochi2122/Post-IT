@@ -33,24 +33,24 @@
 
 
                 <form class="form" action="/items" method="post" width="90vh"><br>
-                    Item: <input class="title" type="text" name="item" maxlength="25"><br>
+                    Item: <input required="true" class="title" type="text" name="item" maxlength="25"><br>
 
 
                     <div class="mb-3">
                         <p>
                             <label for="exampleFormControlTextarea1" class="form-label">Description:</label> </p>
-                        <textarea name="description" class="form-control, desc" id="exampleFormControlTextarea1"
+                        <textarea required="true" name="description" class="form-control, desc" id="exampleFormControlTextarea1"
                             rows="3" name="description" maxlength="800"></textarea>
                     </div>
 
-                    Image: <input placeholder="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
+                    Image: <input required="true" placeholder="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg"
                         class="title" type="url" name="image"></a><br>
-                    Price: <input placeholder="$500" class="title" type="number" name="price" maxlength="6"><br>
-                    Email: <input placeholder="hello@aol.com" class="title" type="email" name="email"
+                    Price: <input required="true" placeholder="$500" class="title" type="number" name="price" maxlength="6"><br>
+                    Email: <input required="true" placeholder="hello@aol.com" class="title" type="email" name="email"
                         maxlength="80"><br>
-                    Phone: <input class="title" type="tel" name="phone" placeholder="123-245-678"
+                    Phone: <input required="true" class="title" type="tel" name="phone" placeholder="123-245-678"
                         pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
-                    Seller's name: <input placeholder="Shin" class="title" type="text" name="seller" maxlength="10"><br>
+                    Seller's name: <input required="true" placeholder="Shin" class="title" type="text" name="seller" maxlength="10"><br>
                     <input type="submit" value="Add New Item">
                 </form>
 
