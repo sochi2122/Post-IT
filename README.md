@@ -12,8 +12,8 @@ Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 
 
 See ERD below:
+<img width="385" alt="144905564-86a885f0-048e-4037-8882-49c0830830aa" src="https://user-images.githubusercontent.com/90932673/146282788-3f762f8e-4f87-496a-8fd6-3c74550071d5.png">
 
-<img width="677" alt="Flow Chart" src="https://user-images.githubusercontent.com/90932673/144905564-86a885f0-048e-4037-8882-49c0830830aa.png">
 
 Item Schema:
 
