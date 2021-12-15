@@ -56,10 +56,7 @@ Sellers: List your item and fill out the fields. Make sure to leave an accurate 
 No authentication is required and sellers can be almost anonymous by using spoofed phone numbers and any email address. IP's and other identifying data is not collected.
 
 
-Next Steps: add additional features to host crypto transactions or add additional fields for crypto transactions. Host images directly though mongoDB, 
+Next Steps: add additional features to host crypto transactions or add additional fields for crypto transactions. Host images directly though mongoDB... 
 
-
-
-
-
-#URL : https://mongoosestoreshinochi.herokuapp.com/
+The next CRUD project will entail a dating app for pet owners who can swipe and match based on location data. 
+Features for this next project will have owners make profiles for their dog and themselves at the same time where they can see if they can match with another dog owner nearby. There are some interesting profile fields such as: bio, images, income, pet information and verification of the said information provided through the website. In asia the dating sites actually verify the profile information before letting a user explore their website. 
