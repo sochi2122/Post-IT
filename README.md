@@ -2,7 +2,7 @@
 
 About The Project
 
-Buyers and sellers will be able to connect on the "Post Me" website. Sellers can list their items and buyers can browse through the currently available items and then contact the seller if they wish to buy something. 
+Buyers and sellers will be able to connect on the "Post IT" website. Sellers can list their items and buyers can browse through the currently available items and then contact the seller if they wish to buy something. 
 
 Some of these sample items are actual items that I have recently sold within the last 4 weeks on either Craigslist or EBay.
 
