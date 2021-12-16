@@ -9,6 +9,8 @@ Some of these sample items are actual items that I have recently sold within the
 
 Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 
+Trello:  https://trello.com/b/m0Y00wa8/project-2
+
 
 
 <h3>See ERD below:</h3>
