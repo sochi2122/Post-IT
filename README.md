@@ -24,13 +24,22 @@ Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 
 
 <h3> Technologies Used: </h3>
+
+<h5>
 -Javascript
+<br>
 -html5
+<br>
 -CSS : Bootstrap, Skeleton
+<br>
 -MongoDB
+<br>
 -CRUD
+<br>
 -IMGbb.com for image hosting.
+<br>
 -Heroku
+</h5>
 
 
 <h3> Screenshots of the initial homepage, edit page and add page with CRUD capability. </h3>
@@ -41,8 +50,7 @@ Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 
 
 
-
-####Screenshots of the final version.
+<h3>Screenshots of the final version. </h3>
 
 
 <img width="1686" alt="index" src="https://user-images.githubusercontent.com/90932673/145941187-e586f5be-6be7-4785-957a-9314e09976a7.png">
@@ -54,7 +62,7 @@ Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 
 
 
-####Getting Started: 
+<h3> Getting Started: </h3>
 
 Buyers: Look through postings and click the email link to buy something new!
 
@@ -63,7 +71,7 @@ Sellers: List your item and fill out the fields. Make sure to leave an accurate 
 No authentication is required and sellers can be almost anonymous by using spoofed phone numbers and any email address. IP's and other identifying data is not collected.
 
 
-###Next Steps: 
+<h3>Next Steps: </h3>
 
 Add additional features to host crypto transactions or add additional fields for crypto transactions. Host images directly though mongoDB... 
 
