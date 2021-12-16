@@ -1,6 +1,6 @@
 ##Post IT!
 
-About The Project
+####About The Project
 
 Buyers and sellers will be able to connect on the "Post IT" website. Sellers can list their items and buyers can browse through the currently available items and then contact the seller if they wish to buy something. 
 
@@ -11,22 +11,29 @@ Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 
 
 
-See ERD below:
+####See ERD below:
 <br>
 
 <img width="385" alt="144905564-86a885f0-048e-4037-8882-49c0830830aa" src="https://user-images.githubusercontent.com/90932673/146282788-3f762f8e-4f87-496a-8fd6-3c74550071d5.png">
 
 
-Item Schema:
+####Item Schema:
 
 <img width="511" alt="Screen Shot 2021-12-14 at 1 01 52 AM" src="https://user-images.githubusercontent.com/90932673/145942093-ba5996df-a638-4773-a819-310a7939eb99.png">
 
 
 
-Technologies Used: JavaScript, HTML, CSS, MongoDB, Bootstrap, CRUD, Skeleton, and IMGbb.com for image hosting.
+####Technologies Used: 
+<ol>Javascript
+<ol>html5
+<ol>CSS : Bootstrap, Skeleton
+<ol>MongoDB
+<ol>CRUD
+<ol>IMGbb.com for image hosting.
+<ol>Heroku
 
 
-##Screenshots of the initial homepage, edit page and add page with CRUD capability.
+####Screenshots of the initial homepage, edit page and add page with CRUD capability.
 
 <img width="1021" alt="Screen Shot 2021-12-04 at 3 43 11 PM" src="https://user-images.githubusercontent.com/90932673/144724070-098150d1-e101-48d6-8218-aa21b648b7db.png">
 <img width="588" alt="Screen Shot 2021-12-04 at 3 43 41 PM" src="https://user-images.githubusercontent.com/90932673/144724071-e97caaa3-b084-40dc-9c6d-3e0fa626c091.png">
@@ -35,7 +42,7 @@ Technologies Used: JavaScript, HTML, CSS, MongoDB, Bootstrap, CRUD, Skeleton, an
 
 
 
-##Screenshots of the final version.
+####Screenshots of the final version.
 
 
 <img width="1686" alt="index" src="https://user-images.githubusercontent.com/90932673/145941187-e586f5be-6be7-4785-957a-9314e09976a7.png">
@@ -47,7 +54,7 @@ Technologies Used: JavaScript, HTML, CSS, MongoDB, Bootstrap, CRUD, Skeleton, an
 
 
 
-Getting Started: 
+####Getting Started: 
 
 Buyers: Look through postings and click the email link to buy something new!
 
@@ -56,7 +63,9 @@ Sellers: List your item and fill out the fields. Make sure to leave an accurate 
 No authentication is required and sellers can be almost anonymous by using spoofed phone numbers and any email address. IP's and other identifying data is not collected.
 
 
-Next Steps: add additional features to host crypto transactions or add additional fields for crypto transactions. Host images directly though mongoDB... 
+###Next Steps: 
+
+Add additional features to host crypto transactions or add additional fields for crypto transactions. Host images directly though mongoDB... 
 
 The next CRUD project will entail a dating app for pet owners who can swipe and match based on location data. 
 Features for this next project will have owners make profiles for their dog and themselves at the same time where they can see if they can match with another dog owner nearby. There are some interesting profile fields such as: bio, images, income, pet information and verification of the said information provided through the website. In asia the dating sites actually verify the profile information before letting a user explore their website. 
