@@ -24,13 +24,13 @@ Feel free to visit my Ebay Store! "https://www.ebay.com/usr/streetfinder2012"
 
 
 ####Technologies Used: 
-<ol>Javascript
-<ol>html5
-<ol>CSS : Bootstrap, Skeleton
-<ol>MongoDB
-<ol>CRUD
-<ol>IMGbb.com for image hosting.
-<ol>Heroku
+-Javascript
+-html5
+-CSS : Bootstrap, Skeleton
+-MongoDB
+-CRUD
+-IMGbb.com for image hosting.
+-Heroku
 
 
 ####Screenshots of the initial homepage, edit page and add page with CRUD capability.
